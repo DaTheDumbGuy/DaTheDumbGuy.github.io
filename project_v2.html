@@ -4,166 +4,487 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Project/style_v2.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
     />
-    <title>Ah-Knee-May</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+    <style>
+      #menuLinks li a {
+        color: white;
+      }
+      /* body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        background-image: url(/Project/IMG/rezero2.jpg);
+      } */
+      /* body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-image: linear-gradient(
+            0deg,
+            rgb(118, 115, 115),
+            rgba(38, 31, 31, 0.6)
+          ),
+          url(/Project/IMG/rezero2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      } */
+      .card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      #smallArticles img {
+        min-width: 111px;
+      }
+      #smallArticles .cards {
+        min-height: 118px;
+      }
+    </style>
   </head>
   <body>
-    <header id="page-header">
-      <div class="logo">
-        <img
-          src="/Project/IMG/imageedit_1_9693433144.png"
-          alt="Logo"
-          style="width: 100%"
-        />
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm bg-white border-bottom border-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/IMG/violet.png"
+            alt="Logo"
+            width="50"
+            class="d-inline-block align-text-center"
+          />
+          Ah-Knee-May
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-label="Expan Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+          <ul class="navbar-nav align-items-sm-center">
+            <!-- Login -->
+            <li class="nav-item">
+              <button
+                class="btn nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+              >
+                Login
+              </button>
+              <!-- Login Form -->
+              <div class="modal fade bg-opacity-75" id="login">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <a class="navbar-brand" href="#">
+                        <img
+                          src="/IMG/violet.png"
+                          alt="Logo"
+                          width="50"
+                          class="d-inline-block align-text-center img-thumbnail"
+                        />
+                        Ah-Knee-May
+                      </a>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="#" class="d-flex flex-column gap-2">
+                        <div class="form-floating">
+                          <input
+                            type="text"
+                            name="email"
+                            class="form-control"
+                            placeholder="Email"
+                            id="email"
+                            required
+                          />
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            name="pwd"
+                            class="form-control"
+                            placeholder="Password"
+                            id="pwd"
+                            required
+                          />
+                          <label for="pwd">Password</label>
+                        </div>
+                        <button class="btn btn-primary align-self-end">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                    <div class="modal-footer text-bg-dark">Copyright</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Subscribe -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">Subscribe</a>
+            </li>
+
+            <!-- Menu -->
+            <li class="nav-item">
+              <button
+                class="btn nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#menu"
+              >
+                Menu
+              </button>
+              <div class="modal bg-dark bg-opacity-75" id="menu">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <a class="navbar-brand text-white" href="#">
+                        <img
+                          src="/IMG/violet.png"
+                          alt="Logo"
+                          width="50"
+                          class="d-inline-block align-text-center bg-dark img-thumbnail"
+                        />` Ah-Knee-May
+                      </a>
+                      <button
+                        class="btn-close bg-danger"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <!-- Menu Links -->
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row row-cols-1 row-cols-md-2 text-bg-dark">
+                          <div class="col">
+                            <h1>Genres--</h1>
+
+                            <ul
+                              class="navbar-nav flex-wrap flex-column"
+                              id="menuLinks"
+                            >
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Action </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Adventure </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Comedy </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Drama </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Fantasy </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Horror </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Magic </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Mystery </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Psychological </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Romance </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Sci-fi </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Slice of life </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Supernatural </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <h1>Others</h1>
+                            <ul
+                              class="navbar-nav flex-wrap flex-column"
+                              id="menuLinks"
+                            >
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Top Airing Animes
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Top Upcoming Animes
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Most Popular </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Featured Articles
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer text-bg-dark">Copyright</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Log In</a></li>
-          <li style="background-color: black; padding: 19px 30px">
-            <a href="#" style="color: white">Subscribe</a>
-          </li>
-        </ul>
-      </nav>
-      <div style="margin-right: 10px">box</div>
-    </header>
+    </nav>
 
-    <main style="background-color: black">
-      <header class="main-header">
-        <h2>Latest Stories</h2>
+    <!-- Main Content -->
+    <main class="container-fluid text-white bg-black">
+      <!-- Ads -->
+      <!-- <aside class="container text-center text-bg-secondary">Ads</aside> -->
+      <!-- Header -->
+      <header class="container text-center py-5 mb-5">
+        <h1>Latest Stories</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-          debitis.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+          corporis.
         </p>
-        <hr />
       </header>
-      <section class="container">
-        <article class="big-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-
-            <div class="read">
-              <div class="box">
-                <div class="lines"></div>
-                <div class="lines"></div>
-                <div class="lines"></div>
+      <!-- Articles 1 -->
+      <section class="container pt-1">
+        <div class="row row-cols-lg-2 row-cols-1 mx-2">
+          <!-- Left Article (smol knockers) -->
+          <div class="col-lg-5 order-lg-first order-last">
+            <h2>TItle</h2>
+            <div
+              class="container d-flex flex-column flex-md-wrap flex-lg-nowrap flex-wrap gap-2"
+              id="smallArticles"
+            >
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="/IMG/violet.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">asd</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <input type="button" value="READ" />
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="/IMG/violet.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">asd</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="/IMG/violet.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">asd</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="/IMG/violet.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">asd</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">See More</a>
+          </div>
+          <!-- Right Articles (big knockers) -->
+          <div class="col-lg-7 p-0">
+            <div class="row row-cols-lg-2 row-cols-1 justify-content-center">
+              <!-- Big articles One -->
+              <div class="col-lg-8 mb-3">
+                <div class="card text-bg-dark">
+                  <img src="IMG/violet.png" class="card-img" alt="..." />
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small>Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Big articles Two -->
+              <div class="col-lg-5 mb-3">
+                <div class="card mx-auto">
+                  <img
+                    src="IMG/violet.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Big articles Three -->
+              <div class="col-lg-5 mb-3">
+                <div class="card mx-auto">
+                  <img
+                    src="IMG/violet.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </article>
-        <article class="big-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-
-            <div class="read">
-              <div class="box">
-                <div class="lines"></div>
-                <div class="lines"></div>
-                <div class="lines"></div>
-              </div>
-              <input type="button" value="READ" />
-            </div>
-          </div>
-        </article>
-        <article class="big-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-
-            <div class="read">
-              <div class="box">
-                <div class="lines"></div>
-                <div class="lines"></div>
-                <div class="lines"></div>
-              </div>
-              <input type="button" value="READ" />
-            </div>
-          </div>
-        </article>
-        <header class="section2-header">
-          <h2>Today's Picks</h2>
-        </header>
-        <article class="small-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-            <p>This is the description of the article</p>
-          </div>
-        </article>
-        <article class="small-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-            <p>This is the description of the article</p>
-          </div>
-        </article>
-        <article class="small-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-            <p>This is the description of the article</p>
-          </div>
-        </article>
-        <article class="small-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-            <p>This is the description of the article</p>
-          </div>
-        </article>
-        <article class="small-article">
-          <img
-            src="/Project/IMG/article1Anya.jpg"
-            alt="Anya"
-            style="width: 100%"
-          />
-          <div class="txt">
-            <h3>Title of the article</h3>
-            <p>This is the description of the article</p>
-          </div>
-        </article>
-        <input type="button" value="SEE MORE" id="seeMore" />
+        </div>
       </section>
-
-      <aside class="ads">Ads</aside>
-
-      <section class="container2"></section>
     </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+<!-- 
+<div class="container d-flex flex-md-wrap flex-lg-nowrap flex-wrap gap-2">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/IMG/violet.png" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">asd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/IMG/violet.png" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">asd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/IMG/violet.png" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">asd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/IMG/violet.png" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">asd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
