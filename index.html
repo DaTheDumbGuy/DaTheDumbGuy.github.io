@@ -16,6 +16,9 @@
     />
     <title>Document</title>
     <style>
+      #menuLinks li a {
+        color: white;
+      }
       /* body::before {
         content: "";
         position: absolute;
@@ -151,7 +154,7 @@
                 <div class="modal-dialog modal-fullscreen">
                   <div class="modal-content bg-dark">
                     <div class="modal-header">
-                      <a class="navbar-brand" href="#">
+                      <a class="navbar-brand text-white" href="#">
                         <img
                           src="/IMG/violet.png"
                           alt="Logo"
@@ -164,69 +167,83 @@
                         data-bs-dismiss="modal"
                       ></button>
                     </div>
+                    <!-- Menu Links -->
                     <div class="modal-body">
                       <div class="container">
                         <div class="row row-cols-1 row-cols-md-2 text-bg-dark">
                           <div class="col">
                             <h1>Genres--</h1>
 
-                            <a href="#">
-                              <p class="genres">Action</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Adventure</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Comedy</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Drama</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Fantasy</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Horror</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Magic</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Mystery</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Psychological</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Romance</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Sci-Fi</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Slice of Life</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Supernatural</p>
-                            </a>
+                            <ul
+                              class="navbar-nav flex-wrap flex-column"
+                              id="menuLinks"
+                            >
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Action </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Adventure </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Comedy </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Drama </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Fantasy </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Horror </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Magic </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Mystery </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Psychological </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Romance </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Sci-fi </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Slice of life </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Supernatural </a>
+                              </li>
+                            </ul>
                           </div>
                           <div class="col">
                             <h1>Others</h1>
-                            <a href="#">
-                              <p class="genres">Top Airing Animes</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Top Upcoming Animes</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Most Popular</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Featured Articles</p>
-                            </a>
-                            <a href="#">
-                              <p class="genres">Top Upcoming Animes</p>
-                            </a>
+                            <ul
+                              class="navbar-nav flex-wrap flex-column"
+                              id="menuLinks"
+                            >
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Top Airing Animes
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Top Upcoming Animes
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Most Popular </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Featured Articles
+                                </a>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -241,15 +258,141 @@
       </div>
     </nav>
 
-    <!-- Ads -->
-    <aside class="container py-4 text-center my-3 text-bg-secondary">Ads</aside>
-
     <!-- Main Content -->
-    <main class="container text-white bg-black">
-      <div class="row row-cols-1 mx-2 row-cols-md-2">
-        <div class="col">asd</div>
-        <div class="col">soasdasd</div>
-      </div>
+    <main class="container-fluid text-white bg-black">
+      <!-- Ads -->
+      <!-- <aside class="container text-center text-bg-secondary">Ads</aside> -->
+      <!-- Header -->
+      <header class="container text-center py-5 mb-5">
+        <h1>Latest Stories</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+          corporis.
+        </p>
+      </header>
+      <!-- Articles 1 -->
+      <section class="container pt-1">
+        <!-- Row 1 -->
+        <div
+          class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
+        >
+          <!-- lg up -> 3 rows || md -> 2 rows || sm below -> 1 rows(default) -->
+
+          <!-- lg ->  4 col per cards(3) || md -> 6 col per cards(2) || sm below -> 1 col(default)-->
+          <!-- Section 1 Article 1 row 1-->
+          <div class="col-md-6 col-lg-4 mb-2">
+            <div class="card mx-auto">
+              <img
+                src="IMG/violet.png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- Section 1 Article 2 row 1-->
+          <div class="col-md-6 col-lg-4 mb-2">
+            <div class="card mx-auto">
+              <img
+                src="IMG/violet.png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <h2>Asdasd</h2>
+        <div
+          class="container d-flex flex-md-wrap flex-lg-nowrap flex-wrap gap-2"
+        >
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/IMG/violet.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">asd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/IMG/violet.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">asd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/IMG/violet.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">asd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/IMG/violet.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">asd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script
