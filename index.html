@@ -19,40 +19,26 @@
       #menuLinks li a {
         color: white;
       }
-      /* body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: auto;
-        height: auto;
-        z-index: 1;
-        background-image: url(/Project/IMG/rezero2.jpg);
-      } */
-      /* body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        background-image: linear-gradient(
-            0deg,
-            rgb(118, 115, 115),
-            rgba(38, 31, 31, 0.6)
-          ),
-          url(/Project/IMG/rezero2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      } */
+      main,
+      .card {
+        background-color: #242424;
+        color: white;
+      }
+      .bi::before {
+        color: white;
+      }
+      .hover:hover,
+      .nav-link:hover,
+      .card-title:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <!-- Navigation -->
     <nav
-      class="navbar navbar-expand-sm text-white bg-dark border-bottom border-dark"
+      class="navbar navbar-expand-sm border-bottom border-dark"
+      style="background-color: rgb(49, 49, 49)"
     >
       <div class="container">
         <a class="navbar-brand text-white" href="#">
@@ -65,36 +51,43 @@
           Ah-Knee-May
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-dark hover"
           data-bs-toggle="collapse"
           data-bs-target="#nav"
           aria-controls="nav"
           aria-label="Expan Navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="bi bi-chevron-double-down"></i></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="nav">
           <ul class="navbar-nav align-items-sm-center">
             <!-- Login -->
             <li class="nav-item">
               <button
-                class="btn nav-link text-white"
+                class="btn nav-link text-white hover"
                 data-bs-toggle="modal"
                 data-bs-target="#login"
               >
                 Login
               </button>
               <!-- Login Form -->
-              <div class="modal fade bg-opacity-75" id="login">
+              <div
+                class="modal fade"
+                id="login"
+                style="background-color: rgba(0, 0, 0, 0.8)"
+              >
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
+                  <div
+                    class="modal-content"
+                    style="background-color: rgb(49, 49, 49)"
+                  >
                     <div class="modal-header">
-                      <a class="navbar-brand" href="#">
+                      <a class="navbar-brand text-white" href="#">
                         <img
                           src="/IMG/violet.png"
                           alt="Logo"
                           width="50"
-                          class="d-inline-block align-text-center img-thumbnail"
+                          class="d-inline-block align-text-center"
                         />
                         Ah-Knee-May
                       </a>
@@ -132,7 +125,6 @@
                         </button>
                       </form>
                     </div>
-                    <div class="modal-footer text-bg-dark">Copyright</div>
                   </div>
                 </div>
               </div>
@@ -140,13 +132,13 @@
 
             <!-- Subscribe -->
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Subscribe</a>
+              <a href="#" class="nav-link text-white hover">Subscribe</a>
             </li>
 
             <!-- Menu -->
             <li class="nav-item">
               <button
-                class="btn nav-link text-white"
+                class="btn nav-link text-white hover"
                 data-bs-toggle="modal"
                 data-bs-target="#menu"
               >
@@ -154,25 +146,35 @@
               </button>
               <div class="modal bg-dark bg-opacity-75" id="menu">
                 <div class="modal-dialog modal-fullscreen">
-                  <div class="modal-content bg-dark">
+                  <div
+                    class="modal-content"
+                    style="background-color: rgb(49, 49, 49)"
+                  >
                     <div class="modal-header">
                       <a class="navbar-brand text-white" href="#">
                         <img
                           src="/IMG/violet.png"
                           alt="Logo"
                           width="50"
-                          class="d-inline-block align-text-center bg-dark img-thumbnail"
-                        />` Ah-Knee-May
+                          class="d-inline-block align-text-center bg-dark"
+                        />
+                        Ah-Knee-May
                       </a>
                       <button
-                        class="btn-close bg-danger"
+                        class="btn-close"
                         data-bs-dismiss="modal"
                       ></button>
                     </div>
                     <!-- Menu Links -->
                     <div class="modal-body">
                       <div class="container">
-                        <div class="row row-cols-1 row-cols-md-2 text-bg-dark">
+                        <div
+                          class="row row-cols-1 row-cols-sm-2"
+                          style="
+                            background-color: rgb(49, 49, 49);
+                            color: white;
+                          "
+                        >
                           <div class="col">
                             <h1>Genres--</h1>
 
@@ -261,7 +263,10 @@
     </nav>
 
     <!-- Header for Main-->
-    <header class="container-fluid text-center py-5 bg-black text-white">
+    <header
+      class="container-fluid text-center py-5"
+      style="background-color: #171717; color: white"
+    >
       <h1>Anime</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
@@ -269,20 +274,31 @@
       </p>
     </header>
     <!-- Main Content -->
-    <main class="container-fluid text-white bg-dark">
+    <main class="container-fluid">
       <!-- Ads -->
-      <!-- <aside class="container text-center text-bg-secondary">Ads</aside> -->
 
+      <!-- <aside class="container-md bg-danger w-25" id="ads">
+        <iframe
+          width="300"
+          height="200"
+          class="object-fit-cover"
+          src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1&controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </aside> -->
       <!-- Articles -->
       <section class="container pt-1">
-        <header class="container mt-5">
-          <h2>Latest</h2>
+        <header class="container mt-5 ps-0">
+          <h2 class="mb-0">Latest</h2>
         </header>
         <div class="row row-cols-1">
           <!-- Article One Big -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mx-auto bg-dark border-0">
+            <div class="card mx-auto border-0">
               <img
                 src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/Natsuki-Subaru-from-Re-Zero-header.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
                 class="card-img-top img-fluid"
@@ -300,7 +316,9 @@
                   episode when the gang returns yet again to Roswaal's Mansion.
                 </p>
                 <p class="card-text">
-                  By <strong>Lorem Lorem</strong> <br /><small
+                  By <strong>Lorem Lorem</strong>
+                  <br />
+                  <small style="font-style: italic"
                     >Last updated 1 hour ago</small
                   >
                 </p>
@@ -310,7 +328,7 @@
           <!-- Article One smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -321,7 +339,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         One Piece: Why Are There So Many New Awakened Devil
@@ -334,7 +352,7 @@
                       many awakened users to appear?
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong><br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -345,7 +363,7 @@
           <!-- Article Two smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -356,7 +374,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         What Is Chainsaw Man's Most Terrifying Devil?
@@ -367,7 +385,7 @@
                       with each varying in strength. Which one is most powerful?
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong><br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -378,7 +396,7 @@
           <!-- Article Three smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -389,7 +407,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         Attack on Titan: Hannes' Death Wasn't Pointless or
@@ -402,7 +420,7 @@
                       connection to innocence.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong><br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -413,7 +431,7 @@
           <!-- Article Four smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -424,7 +442,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         Noragami Manga Set to End After 13-Year Run
@@ -436,7 +454,7 @@
                       year, concluding a 13-year run.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong><br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -447,7 +465,7 @@
           <!-- Article Five smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -458,7 +476,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         Jujutsu Kaisen's Big Three Families & Their Cursed
@@ -471,7 +489,7 @@
                       and their cursed techniques.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong> <br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -482,7 +500,7 @@
           <!-- Article Six smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -493,7 +511,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         Re:Zero: How Rem Became the Series' Undisputed Best Girl
@@ -505,7 +523,7 @@
                       and notoriety.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong> <br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -516,7 +534,7 @@
           <!-- Article Two Big -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mx-auto bg-dark border-0">
+            <div class="card mx-auto border-0">
               <img
                 src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/how-vinland-saga-shares-in-violet-evergarden-s-portrayal-of-children-at-war.jpg?q=50&fit=crop&w=680&h=430&dpr=1.5"
                 class="card-img-top img-fluid"
@@ -546,7 +564,7 @@
           <!-- Article Seven smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -557,7 +575,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         Re:Zero: 10 Things You Never Knew About The Making Of
@@ -569,7 +587,7 @@
                       doing so took a lot of planning and effort.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong><br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -580,7 +598,7 @@
           <!-- Article Eight smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -591,7 +609,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         Bungou Stray Dogs: How Dazai Flips the Anime Mentor
@@ -604,7 +622,7 @@
                       a great mentor for Atsushi in BSD.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong> <br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -615,7 +633,7 @@
           <!-- Article Nine smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -626,7 +644,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         Why Do Some Anime Characters Always Have Their Eyes
@@ -639,7 +657,7 @@
                       scenes. Here's why.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong> <br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -650,7 +668,7 @@
           <!-- Article Ten smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -661,7 +679,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         One Piece: Why Luffy Never Uses Internal Dialogue to
@@ -674,7 +692,7 @@
                       musings, to make his intentions clear.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong><br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -685,7 +703,7 @@
           <!-- Article Eleven smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -696,7 +714,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">
                         How Poor Animation Quality is Hurting Boruto's Success
@@ -708,7 +726,7 @@
                       show to the iconic series Naruto.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong> <br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -719,7 +737,7 @@
           <!-- Article Twelve smol -->
           <article class="col-lg-8 col">
             <hr />
-            <div class="card mb-3 bg-dark border-0">
+            <div class="card mb-3 border-0">
               <div class="row g-0">
                 <div class="col-md-5">
                   <img
@@ -730,7 +748,7 @@
                   />
                 </div>
                 <div class="col-md-7">
-                  <div class="card-body">
+                  <div class="card-body ps-md-3 ps-0">
                     <a href="#" class="text-decoration-none text-white">
                       <h3 class="card-title">Best Sad Anime On Crunchyroll</h3>
                     </a>
@@ -740,7 +758,7 @@
                       anime to watch on Crunchyroll.
                     </p>
                     <p class="card-text">
-                      By <strong>Lorem Lorem</strong>
+                      By <strong>Lorem Lorem</strong><br />
                       <small>Last updated 1 hour ago</small>
                     </p>
                   </div>
@@ -748,6 +766,38 @@
               </div>
             </div>
           </article>
+          <!-- Pagination -->
+          <nav class="col-lg-8 col my-5" id="pagination">
+            <ul class="pagination mb-0 justify-content-center gap-2">
+              <li class="page-item disabled">
+                <span class="page-link border-0">Previous</span>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link bg-danger border-white" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link text-bg-secondary border-white border-1"
+                  href="#"
+                  >2</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link text-bg-secondary border-white border-1"
+                  href="#"
+                  >3</a
+                >
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link text-bg-secondary border-white border-1"
+                  href="#"
+                  >Next</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
     </main>

@@ -1,5 +1,17 @@
--Project_v2.1 articles layout is quite decent. Should I use it as the main article layout then?
--Add Footer
--Add ads at the right side of the row(sticky and for large vieport only)
--Decide which color palette to use
--Add the Article content last
+21/02/2023 6:30 p.m
+-Footer is half done, do it tommorow you lazy bum.
+-Add some designs to main page.
+-Add articles, atleast Five.
+-Add ads (articles and main page).
+-Add sign-in and search.
+-Do something about the article img, look at the past discussion about img(gallery).
+-What's with the header? do something about it you stupid fuk.
+-If possible, do some hover effect to the article img-no, you 'should' stupd fk.
+-Do somthing about the page logo.
+-Your pagination sucks, change it you stpd fuk.
+-Even the page Title is cringe LOOOOOOL. Just die already. 
+
+
+    "gdamn you fking wasted your time if you cant even do something about the img."
+                                      -Probably Me
+
