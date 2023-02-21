@@ -1,4 +1,5 @@
--Do something about the article layout
--Think about the background
--Try using other pictures if it's working
--Focus na pri, Gumawa ka na please future me!
+-Project_v2.1 articles layout is quite decent. Should I use it as the main article layout then?
+-Add Footer
+-Add ads at the right side of the row(sticky and for large vieport only)
+-Decide which color palette to use
+-Add the Article content last
