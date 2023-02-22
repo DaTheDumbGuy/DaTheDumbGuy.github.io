@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+    <style>
+      #menuLinks li a {
+        color: white;
+      }
+      main,
+      .card {
+        background-color: #242424;
+        color: white;
+      }
+      .bi::before {
+        color: white;
+      }
+      .hover:hover,
+      .nav-link:hover,
+      .card-title:hover {
+        text-decoration: underline;
+      }
+      .nav-link {
+        color: white;
+      }
+      @media screen and (max-width: 700px) {
+        body {
+          min-width: 700px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-sm border-bottom border-dark"
+      style="background-color: rgb(49, 49, 49)"
+    >
+      <div class="container">
+        <a class="navbar-brand text-white me-0" href="#">
+          <img
+            src="/IMG/testLogo.gif"
+            alt="Logo"
+            width="30"
+            class="d-inline-block align-text-center"
+          />
+          Ah-Knee-May Network
+        </a>
+        <button
+          class="navbar-toggler bg-dark hover"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-label="Expan Navigation"
+        >
+          <span><i class="bi bi-chevron-double-down"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+          <ul class="navbar-nav align-items-sm-center">
+            <!-- Login -->
+            <li class="nav-item">
+              <button
+                class="btn nav-link text-white hover"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+              >
+                Login
+              </button>
+              <!-- Login Form -->
+              <div
+                class="modal fade"
+                id="login"
+                style="background-color: rgba(0, 0, 0, 0.8)"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div
+                    class="modal-content"
+                    style="background-color: rgb(49, 49, 49)"
+                  >
+                    <div class="modal-header">
+                      <a class="navbar-brand text-white" href="#">
+                        <img
+                          src="/IMG/testLogo.gif"
+                          alt="Logo"
+                          width="30"
+                          class="d-inline-block align-text-center"
+                        />
+                        Ah-Knee-May Network
+                      </a>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="#" class="d-flex flex-column gap-2">
+                        <div class="form-floating">
+                          <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Email"
+                            id="email"
+                            required
+                          />
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            name="pwd"
+                            class="form-control"
+                            placeholder="Password"
+                            id="pwd"
+                            required
+                          />
+                          <label for="pwd">Password</label>
+                        </div>
+                        <button class="btn btn-primary align-self-end">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                    <!-- Sign Up -->
+                    <div class="modal-footer justify-content-start">
+                      <a href="#" class="nav-link text-white">Sign up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Subscribe -->
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white hover">Subscribe</a>
+            </li>
+
+            <!-- Menu -->
+            <li class="nav-item">
+              <button
+                class="btn nav-link text-white hover"
+                data-bs-toggle="modal"
+                data-bs-target="#menu"
+              >
+                Menu
+              </button>
+              <div class="modal bg-dark bg-opacity-75" id="menu">
+                <div class="modal-dialog modal-fullscreen">
+                  <div
+                    class="modal-content"
+                    style="background-color: rgb(49, 49, 49)"
+                  >
+                    <div class="modal-header">
+                      <a class="navbar-brand text-white" href="#">
+                        <img
+                          src="/IMG/testLogo.gif"
+                          alt="Logo"
+                          width="30"
+                          class="d-inline-block align-text-center"
+                        />
+                        Ah-Knee-May Network
+                      </a>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <!-- Menu Links -->
+                    <div class="modal-body">
+                      <div class="container">
+                        <div
+                          class="row row-cols-1 row-cols-sm-2"
+                          style="
+                            background-color: rgb(49, 49, 49);
+                            color: white;
+                          "
+                        >
+                          <div class="col">
+                            <h1>Genres--</h1>
+
+                            <ul
+                              class="navbar-nav flex-wrap flex-column"
+                              id="menuLinks"
+                            >
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Action </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Adventure </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Comedy </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Drama </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Fantasy </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Horror </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Magic </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Mystery </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Psychological </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Romance </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Sci-fi </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Slice of life </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Supernatural </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <h1>Others</h1>
+                            <ul
+                              class="navbar-nav flex-wrap flex-column"
+                              id="menuLinks"
+                            >
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Top Airing Animes
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Top Upcoming Animes
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link"> Most Popular </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                  Featured Articles
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer text-bg-dark">Copyright</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container-fluid">
+      <section class="container w-75">
+        <header class="container">
+          <small class="d-flex flex-wrap mb-0">
+            <a href="#" class="nav-link">Home</a>&ThickSpace; &gt;
+            <a href="#" class="nav-link"> &ThickSpace;Article</a>&ThickSpace;
+            &gt; One Piece: Why Luffy Never Uses Internal Dialogue to Express
+            Himself
+          </small>
+        </header>
+        <article class="container">
+          <!-- Header -->
+          <header>
+            <h1 class="me-5">
+              One Piece: Why Luffy Never Uses Internal Dialogue to Express
+              Himself
+            </h1>
+            <p>
+              One Piece's Monkey D Luffy is a flamboyant extrovert who uses
+              words and actions, not internal actions or mental musings, to make
+              his intentions clear.
+            </p>
+            <p>
+              By <strong>Lorem Lorem</strong>
+              <br />
+              <small style="font-style: italic">Last updated 1 hour ago</small>
+            </p>
+            <img
+              src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/luffy-is-grinning-in-the-movie.jpg?q=50&fit=crop&w=680&h=430&dpr=1.5"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+          </header>
+          <!-- Main content -->
+          <div class="container">
+            <div class="row row-cols-md-2 row-cols-1">
+              <!-- text -->
+              <div class="col col-md-8">
+                <p>
+                  One Piece's protagonist, Monkey D Luffy, can be described as
+                  many things: a romantically dense ahodere, an archetypical
+                  shonen action star, a natural-born leader, and certainly an
+                  extrovert who's always open with his emotions and intentions.
+                  Luffy is an outgoing and expressive hero, and in One Piece's
+                  manga, that fact is even clearer with the dialogue.
+                </p>
+                <p>
+                  Unlike anime, manga makes heavy use of internal dialogue, when
+                  a character thinks something to themselves. One Piece
+                  characters like the smart kuudere Nico Robin and the
+                  calculating Nami make good use of it, but Luffy has
+                  practically no internal dialogue at all, and that's no
+                  accident.
+                </p>
+              </div>
+              <!-- ads. if smol display none -->
+              <div class="col col-md-4">ads</div>
+              <!-- TItle of 2nd topic -->
+              <h2 class="col col-md-8">
+                When a Manga Character Like Luffy Says Everything Out Loud
+              </h2>
+              <!-- Picture -->
+              <div class="col col-md-8">
+                <img
+                  src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/luffy-with-a-fist.jpg?q=50&fit=crop&w=750&dpr=1.5"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                  style="width: 100%"
+                />
+              </div>
+              <!-- Ads -->
+              <div class="col col-md-4">ads</div>
+              <!-- text -->
+              <div class="col col-md-8">
+                <p>
+                  One Piece's protagonist, Monkey D Luffy, can be described as
+                  many things: a romantically dense ahodere, an archetypical
+                  shonen action star, a natural-born leader, and certainly an
+                  extrovert who's always open with his emotions and intentions.
+                  Luffy is an outgoing and expressive hero, and in One Piece's
+                  manga, that fact is even clearer with the dialogue.
+                </p>
+                <p>
+                  Unlike anime, manga makes heavy use of internal dialogue, when
+                  a character thinks something to themselves. One Piece
+                  characters like the smart kuudere Nico Robin and the
+                  calculating Nami make good use of it, but Luffy has
+                  practically no internal dialogue at all, and that's no
+                  accident.
+                </p>
+              </div>
+              <!-- ads. if smol display none -->
+              <div class="col col-md-4">ads</div>
+            </div>
+            <!-- Title of 3rd topic -->
+            <h2 class="col col-md-8">
+              What Sets Luffy Apart From Other Mentally Closed-Off Manga
+              Characters
+            </h2>
+            <!-- Text -->
+            <div class="col col-md-8">
+              <p>
+                Interestingly, the world of manga has other protagonists who
+                have relatively little internal dialogue, but for different
+                reasons than One Piece's Luffy. In most written works such as
+                manga and novels, it's usually the main character who has
+                internal dialogue, as they dominate the point of view and can't
+                know what other people are thinking. Potentially, a manga
+                protagonist can have a lot of internal dialogue so they can
+                communicate their worldview, emotions, intentions and
+                personality to the viewer, all without the clunkiness of
+                on-the-nose external dialogue. Still, certain manga protagonists
+                have minimal internal dialogue like Monkey D Luffy -- just for
+                different reasons.
+              </p>
+              <p>
+                Luffy minimizes his internal dialogue because he is impulsive
+                and grounded, and he feels no need to plan for the future or
+                calculate things. He is also very people-oriented and would much
+                rather tell someone what he feels than just think about it. By
+                contrast, some seinen heroes like Berserk's Guts and Vinland
+                Saga's Thorfinn Karlsefni also have relatively sparse internal
+                dialogue, but to a completely different effect. At different
+                points in their stories, Guts and Thorfinn were both presented
+                as bitter loners who hated the world, and they had little
+                internal dialogue. This helped make Guts and Thorfinn more
+                mysterious and sullen as standoffish antiheroes, treating the
+                audience the same way they treat the people around them -- with
+                cold, unreadable silence.
+              </p>
+              <p>
+                Guts is totally absorbed by his own problems and burdens, from
+                seeking revenge on Griffith to fighting monsters day and night,
+                and he's not too chatty about it with either the people around
+                him or the audience. That almost makes Guts introverted on a
+                meta level, and for a time, the same was true with Thorfinn.
+                Like Luffy, Guts and Thorfinn expressed themselves with their
+                actions and lived in the moment, so they had few inner musings
+                to share via internal dialogue. However, unlike Luffy, Guts and
+                Thorfinn did this because they were suffering and unwilling to
+                open up to others. In this way, a basic literary technique can
+                be used in wildly different ways, demonstrating the true
+                storytelling potential of manga.
+              </p>
+            </div>
+            <div class="col col-md-8 d-flex justify-content-center">
+              <a href="#">Subscribe to our newsletter</a>
+            </div>
+          </div>
+          <!-- Links Footer of the article -->
+          <div
+            class="col col-md-8 d-flex gap-1 flex-wrap justify-content-between"
+          >
+            <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Share</a>
+          </div>
+          <!-- Related Topics -->
+          <div class="col col-md-8">
+            <h4>Related Topics</h4>
+            <a href="#" class="nav-link">One Piece</a>
+          </div>
+          <!-- About the Author -->
+          <div class="col col-md-8">
+            <h4>About The Author</h4>
+            <p><strong>Lorem Lorem</strong>(5631 Aticles Published)</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dignissimos, tempore?
+            </p>
+          </div>
+        </article>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </section>
+    </main>
+
+    <footer class="container-fluid text-white bg-black p-2">
+      <a
+        class="navbar-brand text-white align-items-center d-flex justify-content-center"
+        href="#"
+      >
+        <img
+          src="/IMG/violet.png"
+          alt="Logo"
+          width="50"
+          class="d-inline-block"
+        />
+        Ah-Knee-May
+      </a>
+      <nav class="navbar justify-content-center">
+        <ul
+          class="navbar-nav d-flex flex-row flex-wrap justify-content-between"
+        >
+          <li class="nav-item mx-1">
+            <a href="project_v2.1.html" class="nav-link text-white"
+              >Project_v2.1</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a href="project_v2.html" class="nav-link text-white">Project_v2</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="index.html" class="nav-link text-white">Main</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Link</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Link</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Link</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Link</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link text-white">Link</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="text-center">Copyright</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
