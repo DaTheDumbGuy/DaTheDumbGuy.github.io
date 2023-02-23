@@ -12,4 +12,9 @@
 -Even the page Title is cringe LOOOOOOL. Just die already. 
 
 
-
+23/02/2023 7:10 p.m
+    -Do something about the nav, add some links
+    -Aside have some bugs
+    -Footer is half done  
+    -fix the text padding
+    -Modals have issues/bugs(login and menu)
