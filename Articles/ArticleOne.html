@@ -14,8 +14,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <style>
+      * {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
       #menuLinks li a {
         color: white;
       }
@@ -34,6 +43,19 @@
       }
       .nav-link {
         color: white;
+      }
+      h1,
+      h3,
+      h2,
+      h4 {
+        font-family: "Khand", sans-serif;
+      }
+      .txt > p {
+        font-weight: 400;
+        line-height: 1.6;
+      }
+      #related {
+        border-left: 15px solid red;
       }
       @media screen and (max-width: 700px) {
         body {
@@ -277,14 +299,12 @@
     <!-- Main Content -->
     <main class="container-fluid">
       <section class="container w-75">
-        <header class="container">
-          <small class="d-flex flex-wrap mb-0">
-            <a href="#" class="nav-link">Home</a>&ThickSpace; &gt;
-            <a href="#" class="nav-link"> &ThickSpace;Article</a>&ThickSpace;
-            &gt; One Piece: Why Luffy Never Uses Internal Dialogue to Express
-            Himself
-          </small>
-        </header>
+        <small class="container mb-3 pt-2 d-flex flex-wrap mb-0">
+          <a href="#" class="nav-link">Home</a>&ThickSpace; &gt;
+          <a href="#" class="nav-link"> &ThickSpace;Article</a>&ThickSpace; &gt;
+          One Piece: Why Luffy Never Uses Internal Dialogue to Express Himself
+        </small>
+
         <article class="container">
           <!-- Header -->
           <header>
@@ -297,22 +317,24 @@
               words and actions, not internal actions or mental musings, to make
               his intentions clear.
             </p>
-            <p>
+            <small>
               By <strong>Lorem Lorem</strong>
-              <br />
-              <small style="font-style: italic">Last updated 1 hour ago</small>
-            </p>
+
+              <small class="ms-3" style="font-style: italic"
+                >Published 2 days ago</small
+              >
+            </small>
             <img
               src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/luffy-is-grinning-in-the-movie.jpg?q=50&fit=crop&w=680&h=430&dpr=1.5"
-              class="card-img-top img-fluid"
+              class="card-img-top img-fluid mt-4"
               alt="..."
             />
           </header>
           <!-- Main content -->
-          <div class="container">
+          <div class="container pt-4">
             <div class="row row-cols-md-2 row-cols-1">
               <!-- text -->
-              <div class="col col-md-8">
+              <div class="col col-md-8 txt">
                 <p>
                   One Piece's protagonist, Monkey D Luffy, can be described as
                   many things: a romantically dense ahodere, an archetypical
@@ -331,13 +353,36 @@
                 </p>
               </div>
               <!-- ads. if smol display none -->
-              <div class="col col-md-4">ads</div>
+              <aside class="col col-md-4">ads</aside>
+              <!-- Ads -->
+              <aside class="col col-md-8 border py-3 border-secondary">
+                <iframe
+                  class="w-100 mb-5"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </aside>
+              <!-- Related -->
+              <div class="col col-md-8 my-4" id="related">
+                <h4 class="pt-2 ps-3" style="color: red">Related:</h4>
+
+                <a href="#" class="nav-link">
+                  <h4 class="ps-3">
+                    One Piece Every Version of Luffy's Gear Four, Explained
+                  </h4></a
+                >
+              </div>
               <!-- TItle of 2nd topic -->
-              <h2 class="col col-md-8">
+              <h2 class="col col-md-8 pb-1">
                 When a Manga Character Like Luffy Says Everything Out Loud
               </h2>
               <!-- Picture -->
-              <div class="col col-md-8">
+              <div class="col col-md-8 pb-4">
                 <img
                   src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/luffy-with-a-fist.jpg?q=50&fit=crop&w=750&dpr=1.5"
                   class="card-img-top img-fluid"
@@ -348,7 +393,7 @@
               <!-- Ads -->
               <div class="col col-md-4">ads</div>
               <!-- text -->
-              <div class="col col-md-8">
+              <div class="col col-md-8 txt">
                 <p>
                   One Piece's protagonist, Monkey D Luffy, can be described as
                   many things: a romantically dense ahodere, an archetypical
@@ -369,13 +414,43 @@
               <!-- ads. if smol display none -->
               <div class="col col-md-4">ads</div>
             </div>
+            <!-- ads -->
+            <aside class="col col-md-8 border py-3 border-secondary">
+              <iframe
+                class="w-100 mb-5"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </aside>
+            <div class="col col-md-8 my-4" id="related">
+              <h4 class="pt-2 ps-3" style="color: red">Related:</h4>
+
+              <a href="#" class="nav-link">
+                <h4 class="ps-3">
+                  How to Build One Piece's Monkey D Luffy in Dungeons & Dragons
+                </h4></a
+              >
+            </div>
             <!-- Title of 3rd topic -->
             <h2 class="col col-md-8">
               What Sets Luffy Apart From Other Mentally Closed-Off Manga
               Characters
             </h2>
+            <div class="col col-md-8 pb-4">
+              <img
+                src=" https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/06/berserk-guts-dragon-slayer-Cropped.jpg?q=50&fit=crop&w=750&dpr=1.5"
+                class="card-img-top img-fluid"
+                alt="..."
+                style="width: 100%"
+              />
+            </div>
             <!-- Text -->
-            <div class="col col-md-8">
+            <div class="col col-md-8 txt">
               <p>
                 Interestingly, the world of manga has other protagonists who
                 have relatively little internal dialogue, but for different
@@ -390,7 +465,20 @@
                 have minimal internal dialogue like Monkey D Luffy -- just for
                 different reasons.
               </p>
-              <p>
+              <!-- ads -->
+              <aside class="col col-md-12 border py-3 border-secondary">
+                <iframe
+                  class="w-100 mb-5"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </aside>
+              <p class="pt-4">
                 Luffy minimizes his internal dialogue because he is impulsive
                 and grounded, and he feels no need to plan for the future or
                 calculate things. He is also very people-oriented and would much
@@ -420,38 +508,53 @@
                 storytelling potential of manga.
               </p>
             </div>
-            <div class="col col-md-8 d-flex justify-content-center">
-              <a href="#">Subscribe to our newsletter</a>
-            </div>
           </div>
           <!-- Links Footer of the article -->
           <div
-            class="col col-md-8 d-flex gap-1 flex-wrap justify-content-between"
+            class="col col-md-8 d-flex gap-1 flex-wrap justify-content-between mb-3"
           >
             <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Tweet</a>
             <a href="#" class="nav-link"> Share</a>
             <a href="#" class="nav-link"> Share</a>
             <a href="#" class="nav-link"> Share</a>
-            <a href="#" class="nav-link"> Share</a>
-            <a href="#" class="nav-link"> Share</a>
-            <a href="#" class="nav-link"> Share</a>
+            <a href="#" class="nav-link"> Copy</a>
+            <a href="#" class="nav-link"> Email</a>
           </div>
           <!-- Related Topics -->
-          <div class="col col-md-8">
+          <div class="col col-md-8 mb-4">
             <h4>Related Topics</h4>
-            <a href="#" class="nav-link">One Piece</a>
+            <div class="container">
+              <a
+                href="#"
+                class="nav-link bg-black border d-inline px-2 py-1 ms-4"
+                ><small>One Piece</small></a
+              >
+            </div>
           </div>
           <!-- About the Author -->
-          <div class="col col-md-8">
+          <div class="col col-md-8 mb-5">
             <h4>About The Author</h4>
-            <p><strong>Lorem Lorem</strong>(5631 Aticles Published)</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Dignissimos, tempore?
-            </p>
+            <div class="container ms-4">
+              <p><strong>Lorem Lorem</strong>(5631 Aticles Published)</p>
+
+              <small>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos, tempore? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatem, corrupti.
+              </small>
+            </div>
           </div>
         </article>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="form-floating col col-md-8 pb-5">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 100px; background: #242424"
+          ></textarea>
+          <label for="floatingTextarea2">Comments</label>
+        </div>
       </section>
     </main>
 
