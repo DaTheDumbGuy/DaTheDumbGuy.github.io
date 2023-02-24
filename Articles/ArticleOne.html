@@ -101,7 +101,7 @@
         background-color: red;
         text-decoration: none;
       }
-      @media screen and (max-width: 1300px) {
+      @media screen and (max-width: 1000px) {
         #begoneThot {
           display: none;
         }
@@ -131,7 +131,7 @@
       style="background-color: rgb(49, 49, 49)"
     >
       <div class="container">
-        <a class="navbar-brand text-white me-0" href="/index.html">
+        <a class="navbar-brand text-white me-0" href="#">
           <img
             src="/IMG/testLogo.gif"
             alt="Logo"
@@ -187,7 +187,7 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      <form action="#" class="d-flex flex-column gap-2">
+                      <form action="#" class="d-flex flex-column gap-3">
                         <div class="form-floating">
                           <input
                             type="email"
@@ -197,7 +197,9 @@
                             id="email"
                             required
                           />
-                          <label for="email" class="text-black">Email</label>
+                          <label for="email" class="text-black"
+                            >Email or phone number</label
+                          >
                         </div>
                         <div class="form-floating">
                           <input
@@ -210,14 +212,18 @@
                           />
                           <label for="pwd" class="text-black">Password</label>
                         </div>
-                        <button class="btn btn-primary align-self-end">
-                          Login
-                        </button>
+                        <button class="btn btn-primary">Login</button>
+                        <a
+                          href="#"
+                          class="text-decoration-none align-self-center"
+                          id="fPassword"
+                          >Forgot password?</a
+                        >
+                        <hr class="my-0" />
+                        <a href="#" class="btn btn-success align-self-center"
+                          >Create new account</a
+                        >
                       </form>
-                    </div>
-                    <!-- Sign Up -->
-                    <div class="modal-footer justify-content-start">
-                      <a href="#" class="nav-link text-white">Sign up</a>
                     </div>
                   </div>
                 </div>
@@ -410,238 +416,33 @@
           </header>
           <!-- Main content -->
           <div class="container pt-4">
-            <div class="row row-cols-xl-2 row-cols-1 justify-content-between">
-              <!-- text -->
-              <div class="col col-xl-8 txt">
-                <p>
-                  One Piece's protagonist, Monkey D Luffy, can be described as
-                  many things: a romantically dense ahodere, an archetypical
-                  shonen action star, a natural-born leader, and certainly an
-                  extrovert who's always open with his emotions and intentions.
-                  Luffy is an outgoing and expressive hero, and in One Piece's
-                  manga, that fact is even clearer with the dialogue.
-                </p>
-                <p>
-                  Unlike anime, manga makes heavy use of internal dialogue, when
-                  a character thinks something to themselves. One Piece
-                  characters like the smart kuudere Nico Robin and the
-                  calculating Nami make good use of it, but Luffy has
-                  practically no internal dialogue at all, and that's no
-                  accident.
-                </p>
-              </div>
-              <!-- right side ads. if smol display none -->
-              <aside class="col col-xl-3" id="begoneThot">
-                <iframe
-                  class="w-100 mb-5 h-75"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </aside>
-              <!-- Ads -->
-              <aside
-                class="col col-xl-8 border py-3 align-self-center border-secondary"
-              >
-                <iframe
-                  class="w-100 mb-5"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </aside>
-              <!-- Related -->
-              <div class="col col-xl-8 my-3" id="related">
-                <h4 class="pt-2 ps-3" style="color: red">Related:</h4>
+            <div class="row row-cols-lg-2 row-cols-1">
+              <div class="col col-lg-9">
+                <!-- text -->
+                <div class="col txt">
+                  <p>
+                    One Piece's protagonist, Monkey D Luffy, can be described as
+                    many things: a romantically dense ahodere, an archetypical
+                    shonen action star, a natural-born leader, and certainly an
+                    extrovert who's always open with his emotions and
+                    intentions. Luffy is an outgoing and expressive hero, and in
+                    One Piece's manga, that fact is even clearer with the
+                    dialogue.
+                  </p>
+                  <p>
+                    Unlike anime, manga makes heavy use of internal dialogue,
+                    when a character thinks something to themselves. One Piece
+                    characters like the smart kuudere Nico Robin and the
+                    calculating Nami make good use of it, but Luffy has
+                    practically no internal dialogue at all, and that's no
+                    accident.
+                  </p>
+                </div>
 
-                <a href="#" class="nav-link">
-                  <h4 class="ps-3">
-                    One Piece Every Version of Luffy's Gear Four, Explained
-                  </h4></a
+                <!-- Ads -->
+                <aside
+                  class="col border py-3 align-self-center border-secondary"
                 >
-              </div>
-              <!-- TItle of 2nd topic -->
-              <h2 class="col col-xl-8 pb-1 ps-0">
-                When a Manga Character Like Luffy Says Everything Out Loud
-              </h2>
-
-              <!-- Picture -->
-              <div class="col col-xl-8 pb-4 txt">
-                <img
-                  src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/luffy-with-a-fist.jpg?q=50&fit=crop&w=750&dpr=1.5"
-                  class="card-img-top img-fluid"
-                  alt="..."
-                  style="width: 100%"
-                />
-              </div>
-
-              <!-- Right side Ads -->
-              <aside
-                class="col col-xl-3 position-sticky"
-                id="begoneThot"
-                style="top: 20px"
-              >
-                <iframe
-                  class="w-100 mb-5"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </aside>
-
-              <!-- text -->
-              <div class="col col-xl-8 txt">
-                <p>
-                  One Piece's protagonist, Monkey D Luffy, can be described as
-                  many things: a romantically dense ahodere, an archetypical
-                  shonen action star, a natural-born leader, and certainly an
-                  extrovert who's always open with his emotions and intentions.
-                  Luffy is an outgoing and expressive hero, and in One Piece's
-                  manga, that fact is even clearer with the dialogue.
-                </p>
-                <p>
-                  Unlike anime, manga makes heavy use of internal dialogue, when
-                  a character thinks something to themselves. One Piece
-                  characters like the smart kuudere Nico Robin and the
-                  calculating Nami make good use of it, but Luffy has
-                  practically no internal dialogue at all, and that's no
-                  accident.
-                </p>
-              </div>
-              <!-- Ads rightside -->
-              <aside
-                class="col col-xl-3 position-sticky"
-                id="begoneThot"
-                style="top: 350px"
-              >
-                <h4 class="mb-0">Trending Now</h4>
-                <hr class="mt-0" />
-                <article class="container-fluid d-flex mb-3">
-                  <div class="w-100">
-                    <img
-                      class="img-fluid"
-                      src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/one-piece-devil-fruit-users.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
-                      alt="Your Image"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        object-position: right;
-                      "
-                    />
-                  </div>
-                  <div class="ps-2">
-                    <h2 style="font-size: 1rem">
-                      One Piece: Why Are There So Many New Awakened Devil Fruit
-                      Users
-                    </h2>
-                  </div>
-                </article>
-                <article class="container-fluid d-flex mb-3">
-                  <div class="w-100">
-                    <img
-                      class="img-fluid"
-                      src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/01/Hannes-Protects-Eren-And-Mikasa-In-Attack-On-Titan.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
-                      alt="Your Image"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        object-position: right;
-                      "
-                    />
-                  </div>
-                  <div class="ps-2">
-                    <h2 style="font-size: 1rem">
-                      Attack on Titan: Hannes' Death Wasn't Pointless or
-                      Melodramatic
-                    </h2>
-                  </div>
-                </article>
-                <article class="container-fluid d-flex mb-3">
-                  <div class="w-100">
-                    <img
-                      class="img-fluid"
-                      src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/08/Untitled-design-(24).png?q=50&fit=crop&w=680&h=430&dpr=1.5"
-                      alt="Your Image"
-                      style="width: 100%; height: 100%; object-fit: cover"
-                    />
-                  </div>
-                  <div class="ps-2">
-                    <h2 style="font-size: 1rem">
-                      Re:Zero: How Rem Became the Series' Undisputed Best Girl
-                    </h2>
-                  </div>
-                </article>
-              </aside>
-              <!-- ads -->
-              <aside class="col col-xl-8 border py-3 border-secondary">
-                <iframe
-                  class="w-100 mb-5"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </aside>
-              <!-- Related -->
-              <div class="col col-xl-8 my-4" id="related">
-                <h4 class="pt-2 ps-3" style="color: red">Related:</h4>
-
-                <a href="#" class="nav-link">
-                  <h4 class="ps-3">
-                    How to Build One Piece's Monkey D Luffy in Dungeons &
-                    Dragons
-                  </h4></a
-                >
-              </div>
-              <!-- Title of 3rd topic -->
-              <h2 class="col col-xl-8 ps-0">
-                What Sets Luffy Apart From Other Mentally Closed-Off Manga
-                Characters
-              </h2>
-              <!-- Img of the 3rd topic -->
-              <div class="col col-xl-8 pb-4 ps-0">
-                <img
-                  src=" https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/06/berserk-guts-dragon-slayer-Cropped.jpg?q=50&fit=crop&w=750&dpr=1.5"
-                  class="card-img-top img-fluid"
-                  alt="..."
-                  style="width: 100%"
-                />
-              </div>
-              <!-- Content of the 3rd topic -->
-              <div class="col col-xl-8 txt">
-                <p>
-                  Interestingly, the world of manga has other protagonists who
-                  have relatively little internal dialogue, but for different
-                  reasons than One Piece's Luffy. In most written works such as
-                  manga and novels, it's usually the main character who has
-                  internal dialogue, as they dominate the point of view and
-                  can't know what other people are thinking. Potentially, a
-                  manga protagonist can have a lot of internal dialogue so they
-                  can communicate their worldview, emotions, intentions and
-                  personality to the viewer, all without the clunkiness of
-                  on-the-nose external dialogue. Still, certain manga
-                  protagonists have minimal internal dialogue like Monkey D
-                  Luffy -- just for different reasons.
-                </p>
-                <!-- ads -->
-                <aside class="col col-xl-12 border py-3 border-secondary px-2">
                   <iframe
                     class="w-100 mb-5"
                     width="560"
@@ -653,116 +454,307 @@
                     allowfullscreen
                   ></iframe>
                 </aside>
-                <p class="pt-4">
-                  Luffy minimizes his internal dialogue because he is impulsive
-                  and grounded, and he feels no need to plan for the future or
-                  calculate things. He is also very people-oriented and would
-                  much rather tell someone what he feels than just think about
-                  it. By contrast, some seinen heroes like Berserk's Guts and
-                  Vinland Saga's Thorfinn Karlsefni also have relatively sparse
-                  internal dialogue, but to a completely different effect. At
-                  different points in their stories, Guts and Thorfinn were both
-                  presented as bitter loners who hated the world, and they had
-                  little internal dialogue. This helped make Guts and Thorfinn
-                  more mysterious and sullen as standoffish antiheroes, treating
-                  the audience the same way they treat the people around them --
-                  with cold, unreadable silence.
-                </p>
-                <p>
-                  Guts is totally absorbed by his own problems and burdens, from
-                  seeking revenge on Griffith to fighting monsters day and
-                  night, and he's not too chatty about it with either the people
-                  around him or the audience. That almost makes Guts introverted
-                  on a meta level, and for a time, the same was true with
-                  Thorfinn. Like Luffy, Guts and Thorfinn expressed themselves
-                  with their actions and lived in the moment, so they had few
-                  inner musings to share via internal dialogue. However, unlike
-                  Luffy, Guts and Thorfinn did this because they were suffering
-                  and unwilling to open up to others. In this way, a basic
-                  literary technique can be used in wildly different ways,
-                  demonstrating the true storytelling potential of manga.
-                </p>
-              </div>
-              <div class="col-12 col-xl-8 d-flex justify-content-center">
-                <a href="#" class="nav-link" id="subscribeFooter"
-                  >Subscribe to our newsletter</a
-                >
-              </div>
-              <!-- Links Footer of the article -->
-              <div
-                class="col-12 col-xl-8 d-flex gap-1 flex-wrap justify-content-around mb-3"
-                id="shareLink"
-              >
-                <a
-                  href="#"
-                  class="btn p-2 px-3"
-                  style="background-color: rgb(59, 89, 152)"
-                >
-                  <i class="bi bi-facebook bg-transparent me-1"></i>Share</a
-                >
-                <a
-                  href="#"
-                  class="btn py-2 px-3"
-                  style="background-color: rgb(0, 172, 237)"
-                  ><i class="bi bi-twitter me-1"></i> Tweet</a
-                >
-                <a
-                  href="#"
-                  class="btn py-2 px-3"
-                  style="background-color: rgb(10, 102, 194)"
-                >
-                  <i class="bi bi-linkedin me-1"></i>Share</a
-                >
-                <a
-                  href="#"
-                  class="btn py-2 px-3"
-                  style="background-color: rgb(235, 85, 40)"
-                >
-                  <i class="bi bi-reddit me-1"></i>Share</a
-                >
 
-                <a
-                  href="#"
-                  class="btn py-2 px-3"
-                  style="background-color: rgb(58, 73, 88)"
-                  ><i class="bi bi-envelope-fill me-1"></i> Email</a
-                >
-              </div>
-              <!-- Related Topics -->
-              <div class="col col-xl-8 mb-4 ps-0">
-                <h4>Related Topics</h4>
-                <div class="container">
-                  <a
-                    href="#"
-                    class="nav-link bg-black border d-inline px-2 py-1 ms-4"
-                    ><small>One Piece</small></a
+                <!-- Related -->
+                <div class="col my-3" id="related">
+                  <h4 class="pt-2 ps-3" style="color: red">Related:</h4>
+                  <a href="#" class="nav-link">
+                    <h4 class="ps-3">
+                      One Piece Every Version of Luffy's Gear Four, Explained
+                    </h4></a
                   >
                 </div>
-              </div>
-              <!-- About the Author -->
-              <div class="col col-xl-8 mb-5 ps-0">
-                <h4>About The Author</h4>
-                <div class="container ms-4">
-                  <p><strong>Lorem Lorem</strong>(5631 Aticles Published)</p>
-
-                  <small>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Dignissimos, tempore? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Voluptatem, corrupti.
-                  </small>
+                <!-- TItle of 2nd topic -->
+                <h2 class="col pb-1 ps-0">
+                  When a Manga Character Like Luffy Says Everything Out Loud
+                </h2>
+                <!-- Picture -->
+                <div class="col pb-4 txt">
+                  <img
+                    src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/luffy-with-a-fist.jpg?q=50&fit=crop&w=750&dpr=1.5"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                    style="width: 100%"
+                  />
                 </div>
+                <!-- text -->
+                <div class="col txt">
+                  <p>
+                    One Piece's protagonist, Monkey D Luffy, can be described as
+                    many things: a romantically dense ahodere, an archetypical
+                    shonen action star, a natural-born leader, and certainly an
+                    extrovert who's always open with his emotions and
+                    intentions. Luffy is an outgoing and expressive hero, and in
+                    One Piece's manga, that fact is even clearer with the
+                    dialogue.
+                  </p>
+                  <p>
+                    Unlike anime, manga makes heavy use of internal dialogue,
+                    when a character thinks something to themselves. One Piece
+                    characters like the smart kuudere Nico Robin and the
+                    calculating Nami make good use of it, but Luffy has
+                    practically no internal dialogue at all, and that's no
+                    accident.
+                  </p>
+                </div>
+                <!-- ads -->
+                <aside class="col border py-3 border-secondary">
+                  <iframe
+                    class="w-100 mb-5"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </aside>
+                <!-- Related -->
+                <div class="col my-4" id="related">
+                  <h4 class="pt-2 ps-3" style="color: red">Related:</h4>
+                  <a href="#" class="nav-link">
+                    <h4 class="ps-3">
+                      How to Build One Piece's Monkey D Luffy in Dungeons &
+                      Dragons
+                    </h4></a
+                  >
+                </div>
+                <!-- Title of 3rd topic -->
+                <h2 class="col ps-0">
+                  What Sets Luffy Apart From Other Mentally Closed-Off Manga
+                  Characters
+                </h2>
+                <!-- Img of the 3rd topic -->
+                <div class="col pb-4 ps-0">
+                  <img
+                    src=" https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/06/berserk-guts-dragon-slayer-Cropped.jpg?q=50&fit=crop&w=750&dpr=1.5"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                    style="width: 100%"
+                  />
+                </div>
+                <!-- Content of the 3rd topic -->
+                <div class="col txt">
+                  <p>
+                    Interestingly, the world of manga has other protagonists who
+                    have relatively little internal dialogue, but for different
+                    reasons than One Piece's Luffy. In most written works such
+                    as manga and novels, it's usually the main character who has
+                    internal dialogue, as they dominate the point of view and
+                    can't know what other people are thinking. Potentially, a
+                    manga protagonist can have a lot of internal dialogue so
+                    they can communicate their worldview, emotions, intentions
+                    and personality to the viewer, all without the clunkiness of
+                    on-the-nose external dialogue. Still, certain manga
+                    protagonists have minimal internal dialogue like Monkey D
+                    Luffy -- just for different reasons.
+                  </p>
+                  <!-- ads -->
+                  <aside
+                    class="col col-xl-12 border py-3 border-secondary px-2"
+                  >
+                    <iframe
+                      class="w-100 mb-5"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </aside>
+                  <p class="pt-4">
+                    Luffy minimizes his internal dialogue because he is
+                    impulsive and grounded, and he feels no need to plan for the
+                    future or calculate things. He is also very people-oriented
+                    and would much rather tell someone what he feels than just
+                    think about it. By contrast, some seinen heroes like
+                    Berserk's Guts and Vinland Saga's Thorfinn Karlsefni also
+                    have relatively sparse internal dialogue, but to a
+                    completely different effect. At different points in their
+                    stories, Guts and Thorfinn were both presented as bitter
+                    loners who hated the world, and they had little internal
+                    dialogue. This helped make Guts and Thorfinn more mysterious
+                    and sullen as standoffish antiheroes, treating the audience
+                    the same way they treat the people around them -- with cold,
+                    unreadable silence.
+                  </p>
+                  <p>
+                    Guts is totally absorbed by his own problems and burdens,
+                    from seeking revenge on Griffith to fighting monsters day
+                    and night, and he's not too chatty about it with either the
+                    people around him or the audience. That almost makes Guts
+                    introverted on a meta level, and for a time, the same was
+                    true with Thorfinn. Like Luffy, Guts and Thorfinn expressed
+                    themselves with their actions and lived in the moment, so
+                    they had few inner musings to share via internal dialogue.
+                    However, unlike Luffy, Guts and Thorfinn did this because
+                    they were suffering and unwilling to open up to others. In
+                    this way, a basic literary technique can be used in wildly
+                    different ways, demonstrating the true storytelling
+                    potential of manga.
+                  </p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <a href="#" class="nav-link" id="subscribeFooter"
+                    >Subscribe to our newsletter</a
+                  >
+                </div>
+                <!-- Links Footer of the article -->
+                <div
+                  class="col d-flex gap-1 flex-wrap justify-content-around mb-3"
+                  id="shareLink"
+                >
+                  <a
+                    href="#"
+                    class="btn p-2 px-3"
+                    style="background-color: rgb(59, 89, 152)"
+                  >
+                    <i class="bi bi-facebook bg-transparent me-1"></i>Share</a
+                  >
+                  <a
+                    href="#"
+                    class="btn py-2 px-3"
+                    style="background-color: rgb(0, 172, 237)"
+                    ><i class="bi bi-twitter me-1"></i> Tweet</a
+                  >
+                  <a
+                    href="#"
+                    class="btn py-2 px-3"
+                    style="background-color: rgb(10, 102, 194)"
+                  >
+                    <i class="bi bi-linkedin me-1"></i>Share</a
+                  >
+                  <a
+                    href="#"
+                    class="btn py-2 px-3"
+                    style="background-color: rgb(235, 85, 40)"
+                  >
+                    <i class="bi bi-reddit me-1"></i>Share</a
+                  >
+                  <a
+                    href="#"
+                    class="btn py-2 px-3"
+                    style="background-color: rgb(58, 73, 88)"
+                    ><i class="bi bi-envelope-fill me-1"></i> Email</a
+                  >
+                </div>
+                <!-- Related Topics -->
+                <div class="col mb-4 ps-0">
+                  <h4>Related Topics</h4>
+                  <div class="container">
+                    <a
+                      href="#"
+                      class="nav-link bg-black border d-inline px-2 py-1 ms-4"
+                      ><small>One Piece</small></a
+                    >
+                  </div>
+                </div>
+                <!-- About the Author -->
+                <div class="col mb-5 ps-0">
+                  <h4>About The Author</h4>
+                  <div class="container ms-4">
+                    <p><strong>Lorem Lorem</strong>(5631 Aticles Published)</p>
+                    <small>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Dignissimos, tempore? Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Voluptatem, corrupti.
+                    </small>
+                  </div>
+                </div>
+                <!-- Comment -->
+                <div class="form-floating col pb-5">
+                  <textarea
+                    class="form-control text-white"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px; background: #242424"
+                  ></textarea>
+                  <label for="floatingTextarea2" class="ps-4">Comment</label>
+                </div>
+                <!-- Row end -->
               </div>
-              <!-- Comment -->
-              <div class="form-floating col col-xl-8 pb-5">
-                <textarea
-                  class="form-control text-white"
-                  placeholder="Leave a comment here"
-                  id="floatingTextarea2"
-                  style="height: 100px; background: #242424"
-                ></textarea>
-                <label for="floatingTextarea2" class="ps-4">Comment</label>
+              <div class="col col-lg-3">
+                <!-- Ads rightside -->
+                <aside
+                  class="col position-sticky"
+                  id="begoneThot"
+                  style="top: 10px"
+                >
+                  <iframe
+                    class="w-100 mb-1"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+
+                  <h4 class="mb-0">Trending Now</h4>
+                  <hr class="mt-0" />
+                  <article class="container-fluid d-flex mb-3">
+                    <div class="w-100">
+                      <img
+                        class="img-fluid"
+                        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/one-piece-devil-fruit-users.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                        alt="Your Image"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          object-fit: cover;
+                          object-position: right;
+                        "
+                      />
+                    </div>
+                    <div class="ps-2">
+                      <h2 style="font-size: 1rem">
+                        One Piece: Why Are There So Many New Awakened Devil
+                        Fruit Users
+                      </h2>
+                    </div>
+                  </article>
+                  <article class="container-fluid d-flex mb-3">
+                    <div class="w-100">
+                      <img
+                        class="img-fluid"
+                        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/01/Hannes-Protects-Eren-And-Mikasa-In-Attack-On-Titan.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"
+                        alt="Your Image"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          object-fit: cover;
+                          object-position: right;
+                        "
+                      />
+                    </div>
+                    <div class="ps-2">
+                      <h2 style="font-size: 1rem">
+                        Attack on Titan: Hannes' Death Wasn't Pointless or
+                        Melodramatic
+                      </h2>
+                    </div>
+                  </article>
+                  <article class="container-fluid d-flex mb-3">
+                    <div class="w-100">
+                      <img
+                        class="img-fluid"
+                        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/08/Untitled-design-(24).png?q=50&fit=crop&w=680&h=430&dpr=1.5"
+                        alt="Your Image"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                      />
+                    </div>
+                    <div class="ps-2">
+                      <h2 style="font-size: 1rem">
+                        Re:Zero: How Rem Became the Series' Undisputed Best Girl
+                      </h2>
+                    </div>
+                  </article>
+                </aside>
               </div>
-              <!-- Row end -->
             </div>
           </div>
         </article>
