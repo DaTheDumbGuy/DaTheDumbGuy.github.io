@@ -55,6 +55,7 @@
       footer > * {
         font-size: small !important;
       }
+
       @media screen and (max-width: 1000px) {
         #begoneThot {
           display: none;
@@ -1009,19 +1010,51 @@
             </div>
           </div>
           <aside class="col col-lg-3" id="begoneThot">
-            <div class="container position-sticky" style="top: 20px">
-              <div class="container d-flex">
-                <div class="container">
-                  <a href="#" class="btn text-white">Comic Reviews</a>
-                  <img src="#" alt="Image" />
-                </div>
-                <div class="container">
-                  <a href="#" class="btn text-white">Comic Reviews</a>
-                  <img src="#" alt="img" />
-                </div>
+            <div
+              class="container position-sticky row row-cols-2 row-gap-3 py-2"
+              style="top: 20px"
+            >
+              <div class="container overflow-hidden text-center">
+                <h6>Manga Review</h6>
+                <a href="#" class="col-md-5">
+                  <img
+                    src="https://i.pinimg.com/736x/40/b0/28/40b0285b599ffe6aaca95f8fa730a0b6.jpg"
+                    class="img-fluid rounded-1"
+                    alt="..."
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                  />
+                </a>
               </div>
+              <div class="container overflow-hidden text-center">
+                <h6>Manga Review</h6>
+                <a href="#" class="col-md-5 overflow-hidden">
+                  <img
+                    src="https://th.bing.com/th/id/OIP.umoO5q0agYeQ2WdULDzETwHaJ4?pid=ImgDet&rs=1"
+                    class="img-fluid rounded-1"
+                    alt="..."
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: center;
+                    "
+                  />
+                </a>
+              </div>
+
+              <a
+                href="#"
+                class="btn text-bg-danger border align-self-center mx-auto"
+                >See More</a
+              >
+
               <iframe
-                class="w-100 mb-5"
+                class="col w-100 mt-5"
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/aAPMdOZGNgQ?autoplay=1&mute=1"
