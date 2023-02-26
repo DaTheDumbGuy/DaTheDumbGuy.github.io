@@ -23,9 +23,7 @@
         color: white;
         font-family: Georgia, "Times New Roman", Times, serif;
       }
-      /* .card-title {
-        font-family: "Khand", sans-serif;
-      } */
+
       #menuLinks li a {
         color: white;
       }
@@ -60,11 +58,6 @@
           display: none;
         }
       }
-      /* @media screen and (min-width: 800px) {
-        h1 {
-          font-size: 3rem;
-        }
-      } */
     </style>
   </head>
   <body>
@@ -73,7 +66,7 @@
       class="navbar navbar-expand-sm border-bottom border-dark"
       style="background-color: rgb(49, 49, 49)"
     >
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand text-white me-0" href="/index.html">
           <img
             src="/IMG/testLogo.gif"
@@ -93,7 +86,7 @@
           <span><i class="bi bi-chevron-double-down"></i></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="nav">
-          <ul class="navbar-nav align-items-sm-center">
+          <ul class="navbar-nav align-items-sm-center me-2">
             <!-- Login -->
             <li class="nav-item">
               <button
@@ -301,6 +294,20 @@
               </div>
             </li>
           </ul>
+
+          <form class="d-flex" role="search">
+            <div class="input-group" id="searchBar">
+              <input
+                class="form-control d-sm-none"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </nav>

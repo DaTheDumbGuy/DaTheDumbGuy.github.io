@@ -50,9 +50,7 @@
       h4 {
         font-family: "Khand", sans-serif;
       }
-      /* .col {
-        padding-left: 0;
-      } */
+
       .txt {
         padding-left: 0;
       }
@@ -65,27 +63,6 @@
         border-left: 15px solid red;
       }
 
-      /* @media screen and (max-width: 700px) {
-        body {
-          min-width: 700px;
-        }
-        nav {
-          min-width: 700px;
-        }
-        .modal {
-          min-width: 700px;
-        }
-      } */
-      /* @media screen and (max-width: 600px) {
-        section {
-          width: 100%;
-        }
-      } */
-      /* @media screen and (max-width: 600px) {
-        main {
-          width: 100%;
-        }
-      } */
       #shareLink a {
         border: 1px solid black;
         color: white;
@@ -130,7 +107,7 @@
       class="navbar navbar-expand-sm border-bottom border-dark"
       style="background-color: rgb(49, 49, 49)"
     >
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand text-white me-0" href="/index.html">
           <img
             src="/IMG/testLogo.gif"
@@ -150,7 +127,7 @@
           <span><i class="bi bi-chevron-double-down"></i></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="nav">
-          <ul class="navbar-nav align-items-sm-center">
+          <ul class="navbar-nav align-items-sm-center me-2">
             <!-- Login -->
             <li class="nav-item">
               <button
@@ -358,6 +335,20 @@
               </div>
             </li>
           </ul>
+
+          <form class="d-flex" role="search">
+            <div class="input-group" id="searchBar">
+              <input
+                class="form-control d-sm-none"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </nav>
@@ -408,11 +399,6 @@
                 "
               />
             </div>
-            <!-- <img
-              src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/02/luffy-is-grinning-in-the-movie.jpg?q=50&fit=crop&w=680&h=430&dpr=1.5"
-              class="card-img-top img-fluid mt-4"
-              alt="..."
-            /> -->
           </header>
           <!-- Main content -->
           <div class="container pt-4 ps-0">
